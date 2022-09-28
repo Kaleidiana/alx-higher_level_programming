@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-def search_replace(my_list, search, replace):
-	new_list = list()
-	for i in my_list:
-	   if i == search:
-		new_list.append(replace)
-	   else:
-	   new_list.append(i)
-     	return new_list
+def square_matrix_simple(matrix=[]):
+    """computes the square value of all integers of a matrix."""
+	if not matrix:
+	    return None
+	return list(list(map(lambda a: a*a, num_list)) for num_list in matrix)
